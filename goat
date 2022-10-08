@@ -1,0 +1,29 @@
+{
+  "msg" : "ok",
+  "statusCode" : 0,
+  "data" : {
+    "vipList" : [
+      {
+        "vipStatus" : 1,
+        "goodsLabel" : 208,
+        "expireTime" : 3220364137,
+        "goodsName" : "拍搜VIP"
+      },
+      {
+        "vipStatus" : 1,
+        "goodsLabel" : 209,
+        "expireTime" : 3220364137,
+        "goodsName" : "备考VIP"
+      }
+    ],
+    "svipInfo" : {
+      "diffTime" : 18000,
+      "goodsName" : "超级VIP",
+      "goodsLabel" : 207,
+      "expireTime" : 3220364137,
+      "vipStatus" : 1,
+      "svipExplain" : "考途超级VIP 终身尊享中",
+      "svipIsLifelong" : 1
+    }
+  }
+}
