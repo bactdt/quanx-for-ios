@@ -1,0 +1,6 @@
+
+var body = $response.body; 
+var obj = JSON.parse(body);
+obj.accountMoney = 99999999;
+body = JSON.stringify(obj); // 重新打包回json字符串
+$done(body); // 结束修改
