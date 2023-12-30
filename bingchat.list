@@ -1,0 +1,6 @@
+domain-suffix, bingapis.com, proxy
+domain-suffix, cdn.jsdelivr.net, proxy
+domain-suffix, microsoft-falcon.io, proxy
+domain-suffix, msn.com, proxy
+domain-suffix, microsoftapp.net, proxy
+domain, sydney.bing.com,proxy
