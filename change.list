@@ -1,2 +1,2 @@
-//规则纠
-DOMAIN-KEYWORD,qq
+#规则纠正
+DOMAIN-SUFFIX,cn,DIRECT
