@@ -16,6 +16,8 @@
 # > 兴业银行 原规则删除 顺便问下谁有兴业银行跳过代理检测的规则
 ^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20221[1-2]{1} url reject-200
 ^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20230[1-9]{1} url reject-200
+^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20240[1-9]{1} url reject-200
+^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20231[1-9]{1} url reject-200
 
 # > 工银e生活 原规则 主机名都删除 主机名
 ^https?:\/\/pv\.elife\.icbc\.com\.cn\/OFSTPV\/utm\.gif url reject-200
