@@ -1,6 +1,7 @@
 #!name = 兴业
 #!desc = 移除开屏广告
 #!openUrl = 
+#!icon = https://raw.githubusercontent.com/bactdt/tc/main/512x512bb.PNG
 #!author = null
 #!date = 2024-01-22
 [Rewrite]
