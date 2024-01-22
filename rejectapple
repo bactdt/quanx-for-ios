@@ -1,10 +1,10 @@
 #  屏蔽苹果系统更新
-host, ns.itunes.apple.com, reject
-host, appldnld.apple.com, reject
-host, mesu.apple.com, reject
-host, xp.apple.com, reject
-host, gdmf.apple.com, reject
-HOST-SUFFIX,iadsdk.apple.com, reject
-HOST-SUFFIX,ads.internal.unity3d.com, reject
-HOST-SUFFIX,ads.prd.ie.internal.unity3d.com, reject
-HOST-SUFFIX,unityads.unity3d.com, reject
+DOMAIN, ns.itunes.apple.com, reject
+DOMAIN, appldnld.apple.com, reject
+DOMAIN, mesu.apple.com, reject
+DOMAIN, xp.apple.com, reject
+DOMAIN, gdmf.apple.com, reject
+DOMAIN-SUFFIX,iadsdk.apple.com, reject
+DOMAIN-SUFFIX,ads.internal.unity3d.com, reject
+DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com, reject
+DOMAIN-SUFFIX,unityads.unity3d.com, reject
