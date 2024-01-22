@@ -3,7 +3,7 @@
 #!openUrl = 
 #!icon = https://raw.githubusercontent.com/bactdt/tc/main/512x512bb.PNG
 #!author = null
-#!date = 2024-01-22
+#!date = 2024-01-22 13:54
 [Rewrite]
 # > 兴业生活
 ^https?:\/\/file\.cibfintech\.com\/file\/M0[0-9]{1}\/*\/*\/.*.zip url reject-img
