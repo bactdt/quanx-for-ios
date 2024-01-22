@@ -1,0 +1,24 @@
+#!name = 兴业
+#!desc = 移除开屏广告
+#!openUrl = 
+#!author = null
+#!date = 2024-01-22
+[Rewrite]
+# > 兴业生活
+^https?:\/\/file\.cibfintech\.com\/file\/M0[0-9]{1}\/*\/*\/.*.zip url reject-img
+  
+# > 中国广电  主机名 
+^https?:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage url reject-200
+  
+# > 兴业证券优理宝（3秒倒计时还在） 原规则主机名都删除
+^https?:\/\/estock\.xyzq\.cn\/rest\/app\/splash\/imgurl url reject-200
+
+# > 兴业银行 原规则删除 顺便问下谁有兴业银行跳过代理检测的规则
+^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20221[1-2]{1} url reject-200
+^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20230[1-9]{1} url reject-200
+
+# > 工银e生活 原规则 主机名都删除 主机名
+^https?:\/\/pv\.elife\.icbc\.com\.cn\/OFSTPV\/utm\.gif url reject-200
+# > 微信小程序 e生活  规则主机名都删除
+  [Mitm]
+hostname = app.10099.com.cn,pv.elife.icbc.com.cn,images.clib.com.cn
