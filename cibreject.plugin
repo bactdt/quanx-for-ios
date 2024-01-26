@@ -3,7 +3,7 @@
 #!homepage = https://t.me/Aa28413761
 #!icon = https://raw.githubusercontent.com/bactdt/tc/main/512x512bb.PNG
 #!author = null
-#!date = 2024-01-26 19:38
+#!date = 2024-01-26 20:13
 [Rule]
 # > 交管12123
 DOMAIN-suffix, v3.fstats.xyz, reject
@@ -67,6 +67,9 @@ DOMAIN, tysdk.95516.com, reject
 # 首页右下角角标
 ^https?:\/\/api\.futunn\.com\/treasure-chest\/box-data url reject
 
+# > liulishuo
+^https?:\/\/rengine-platform\.llsapp\.com\/auth\/api\/remoteResource\/darwin url reject
+
 [Mitm]
-hostname = app.10099.com.cn,pv.elife.icbc.com.cn,discardrp.umetrip.com,v.icbc.com.cn,images.cib.com.cn,file.cibfintech.com,api*.futunn.com,wx.17u.cn,startup.umetrip.com,gab.122.gov.cn,mbs.boc.cn
+hostname = app.10099.com.cn,pv.elife.icbc.com.cn,discardrp.umetrip.com,v.icbc.com.cn,images.cib.com.cn,file.cibfintech.com,api*.futunn.com,wx.17u.cn,startup.umetrip.com,gab.122.gov.cn,mbs.boc.cn,tcmobileapi.17usoft.com
 
