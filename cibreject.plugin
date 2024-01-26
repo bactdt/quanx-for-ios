@@ -9,7 +9,10 @@
 # > 中国广电  主机名 
 ^https?:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage url reject-200
 
-
+# > 交管12123
+# hostname = 
+^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ url reject
+^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery url reject
 
 # > 航旅纵横
 
@@ -41,5 +44,5 @@
 ^https?:\/\/api\.futunn\.com\/treasure-chest\/box-data url reject
 
 [Mitm]
-hostname = app.10099.com.cn,pv.elife.icbc.com.cn,discardrp.umetrip.com,v.icbc.com.cn,images.cib.com.cn,file.cibfintech.com,api*.futunn.com,wx.17u.cn,startup.umetrip.com
+hostname = app.10099.com.cn,pv.elife.icbc.com.cn,discardrp.umetrip.com,v.icbc.com.cn,images.cib.com.cn,file.cibfintech.com,api*.futunn.com,wx.17u.cn,startup.umetrip.com,gab.122.gov.cn
 
