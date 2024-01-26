@@ -1,15 +1,3 @@
 #规则纠正
 DOMAIN-SUFFIX,cn,DIRECT
-# > 交管12123
-DOMAIN-suffix, v3.fstats.xyz, reject
-DOMAIN-suffix, wss.haoyundmn.com, reject
-DOMAIN-suffix, new.xiongzhangad.com, reject
-DOMAIN-suffix, alexametrics.com, reject
-DOMAIN-keyword, in-page-push, reject
-# > 云闪付
-DOMAIN, ads.95516.com, reject
-DOMAIN, cm-10-138.getui.com, reject
-DOMAIN, sdk.open.talk.getui.net, reject
-DOMAIN, sdk-conf.getui.com, reject
-DOMAIN, switch.cup.com.cn, reject
-DOMAIN, tysdk.95516.com, reject
+
