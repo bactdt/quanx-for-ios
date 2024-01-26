@@ -4,10 +4,17 @@
 #!icon = https://raw.githubusercontent.com/bactdt/tc/main/512x512bb.PNG
 #!author = null
 #!date = 2024-01-26
-[Rewrite]
-  
+[rules]
+
+[Rewrite] 
 # > 中国广电  主机名 
 ^https?:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage url reject-200
+
+# > 中信银行
+# hostname = wap.bank.ecitic.com, imcs.citicbank.com
+^https?:\/\/wap.bank\.ecitic\.com:6443\/NMBFOServer\/cbframework\.do\?act=CUBEPAGEDATA url reject-200
+# 开屏广告
+^https:\/\/imcs\.citicbank\.com\/cloud\/.+(1125.+2436|1242.+2688|750.+1638|563.+1218) url reject-dict
 
 # > 交管12123
 # hostname = 
@@ -15,9 +22,13 @@
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery url reject
 
 # > 航旅纵横
-
 ^http?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native url reject
 ^http?:\/\/(114\.115\.217\.129)|(home\.umetrip\.com)\/gateway\/api\/umetrip\/native$ url script-response-body https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Umetrip/Umetrip_remove_ads.js
+
+
+# hostname = 
+^https:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/.+.jpg url reject-200
+
 # > 工商银行
 # 如开启可自行添加主机名
 ^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/ url reject-200
@@ -44,5 +55,5 @@
 ^https?:\/\/api\.futunn\.com\/treasure-chest\/box-data url reject
 
 [Mitm]
-hostname = app.10099.com.cn,pv.elife.icbc.com.cn,discardrp.umetrip.com,v.icbc.com.cn,images.cib.com.cn,file.cibfintech.com,api*.futunn.com,wx.17u.cn,startup.umetrip.com,gab.122.gov.cn
+hostname = app.10099.com.cn,pv.elife.icbc.com.cn,discardrp.umetrip.com,v.icbc.com.cn,images.cib.com.cn,file.cibfintech.com,api*.futunn.com,wx.17u.cn,startup.umetrip.com,gab.122.gov.cn,mbs.boc.cn
 
