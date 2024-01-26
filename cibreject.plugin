@@ -4,7 +4,7 @@
 #!icon = https://raw.githubusercontent.com/bactdt/tc/main/512x512bb.PNG
 #!author = null
 #!date = 2024-01-26
-[rules]
+[Rule]
 # > 交管12123
 DOMAIN-suffix, v3.fstats.xyz, reject
 DOMAIN-suffix, wss.haoyundmn.com, reject
