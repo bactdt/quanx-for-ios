@@ -55,8 +55,9 @@ DOMAIN, tysdk.95516.com, reject
 # 开屏广告
 ^https?:\/\/wx\.17u\.cn\/xcxhomeapi\/((aggregator\/index)|(home\/(screen|banner|converge)))$ url reject
 ^https?:\/\/wx\.17u\.cn\/crapi\/query\/getAdImgUrlByCode url reject-dict
+^https?:\/\/tcmobileapi\.17usoft\.com\/appindexnew\/index\/getappindexconfig url reject
 
- # > 富途牛牛
+# > 富途牛牛
 # 我的横幅广告
 ^https?:\/\/api\.futunn\.com\/v2\/optimus\/my-homepage-config url reject-dict
 # 账户和交易横幅广告
