@@ -3,16 +3,43 @@
 #!homepage = https://t.me/Aa28413761
 #!icon = https://raw.githubusercontent.com/bactdt/tc/main/512x512bb.PNG
 #!author = null
-#!date = 2024-01-22 14:02
+#!date = 2024-01-26
 [Rewrite]
   
 # > 中国广电  主机名 
 ^https?:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage url reject-200
 
-# > 工银e生活 原规则 主机名都删除 主机名
-^https?:\/\/pv\.elife\.icbc\.com\.cn\/OFSTPV\/utm\.gif url reject-200
+
+
 # > 航旅纵横
-^https?:\/\/discardrp\.umetrip\.com\/gateway\/api\/umetrip\/native url reject-200
-  [Mitm]
-hostname = app.10099.com.cn,pv.elife.icbc.com.cn,discardrp.umetrip.com
+
+^http?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native url reject
+^http?:\/\/(114\.115\.217\.129)|(home\.umetrip\.com)\/gateway\/api\/umetrip\/native$ url script-response-body https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Umetrip/Umetrip_remove_ads.js
+# > 工商银行
+# 如开启可自行添加主机名
+^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/ url reject-200
+
+# > 兴业银行
+# hostname = 
+#（首页会有一小部分图片误杀）
+^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20221[1-2]{1} url reject-200
+^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20230[1-9]{1} url reject-200
+
+# > 同程旅行
+# 开屏广告
+^https?:\/\/wx\.17u\.cn\/xcxhomeapi\/((aggregator\/index)|(home\/(screen|banner|converge)))$ url reject
+^https?:\/\/wx\.17u\.cn\/crapi\/query\/getAdImgUrlByCode url reject-dict
+
+ # > 富途牛牛
+# 我的横幅广告
+^https?:\/\/api\.futunn\.com\/v2\/optimus\/my-homepage-config url reject-dict
+# 账户和交易横幅广告
+^https:\/\/api\.futunn\.com\/v2\/config\/promote-config url reject-dict
+^https?:\/\/api\d\.futunn\.com\/ad\/ url reject
+^https?:\/\/api\.futunn\.com\/v\d\/ad\/ url reject
+# 首页右下角角标
+^https?:\/\/api\.futunn\.com\/treasure-chest\/box-data url reject
+
+[Mitm]
+hostname = app.10099.com.cn,pv.elife.icbc.com.cn,discardrp.umetrip.com,v.icbc.com.cn,images.cib.com.cn,file.cibfintech.com,api*.futunn.com,wx.17u.cn,startup.umetrip.com
 
