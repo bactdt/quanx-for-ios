@@ -72,5 +72,5 @@ DOMAIN, tysdk.95516.com, reject
 ^https?:\/\/rengine-platform\.llsapp\.com\/auth\/api\/remoteResource\/darwin url reject
 
 [Mitm]
-hostname = app.10099.com.cn,pv.elife.icbc.com.cn,discardrp.umetrip.com,v.icbc.com.cn,images.cib.com.cn,file.cibfintech.com,api*.futunn.com,wx.17u.cn,startup.umetrip.com,gab.122.gov.cn,mbs.boc.cn,tcmobileapi.17usoft.com,images.cib.com.cn
+hostname = app.10099.com.cn,pv.elife.icbc.com.cn,discardrp.umetrip.com,v.icbc.com.cn,images.cib.com.cn,file.cibfintech.com,api*.futunn.com,startup.umetrip.com,gab.122.gov.cn,mbs.boc.cn,tcmobileapi.17usoft.com,images.cib.com.cn
 
